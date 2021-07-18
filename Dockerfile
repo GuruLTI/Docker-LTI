@@ -7,5 +7,5 @@ RUN wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenki
 RUN rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
 RUN yum install jenkins -y
 RUN yum install openssh-server -y
-EXPOSE 8383
+#EXPOSE 8383
 CMD java -jar /usr/lib/jenkins/jenkins.war
